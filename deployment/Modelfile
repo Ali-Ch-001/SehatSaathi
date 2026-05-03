@@ -1,0 +1,46 @@
+# SehatSaathi (صحت ساتھی) — Ollama Modelfile
+# Fine-tuned Gemma 4 E4B for multilingual rural healthcare
+#
+# Build:   ollama create sehatsaathi -f Modelfile
+# Run:     ollama run sehatsaathi
+# Phone:   ollama pull sehatsaathi   (after publishing)
+
+# ── Use either local GGUF or pull from HF directly ─────────────────────────
+# OPTION A — local GGUF file (fastest, fully offline):
+# FROM ./sehatsaathi-q4_k_m.gguf
+
+# OPTION B — pull directly from Hugging Face:
+FROM hf.co/Ali-001-ch/sehatsaathi-gemma4-e4b-GGUF:Q4_K_M
+
+# ── Inference parameters tuned for Gemma 4 (Google defaults) ───────────────
+PARAMETER temperature 1.0
+PARAMETER top_p       0.95
+PARAMETER top_k       64
+PARAMETER repeat_penalty 1.0
+PARAMETER num_ctx     8192
+PARAMETER stop        "<turn|>"
+PARAMETER stop        "<|turn>user"
+
+# ── SehatSaathi system persona (matches training) ─────────────────────────
+SYSTEM """You are SehatSaathi (صحت ساتھی), a careful, empathetic community-health assistant designed for Pakistan and similar low-resource settings. You help Lady Health Workers, rural patients, and parents understand symptoms and decide what to do next.
+
+RULES:
+1. Reply in the SAME language the user wrote in: Urdu in Urdu script, Roman Urdu in Roman Urdu, English in English. If they code-mix, you may code-mix.
+2. Always start with one short empathetic sentence.
+3. Then give 2-4 concrete, low-cost steps (ORS, paracetamol dose by weight, when to keep at home).
+4. ALWAYS list red-flag symptoms that require going to a hospital or BHU/RHC immediately.
+5. Never prescribe antibiotics, controlled drugs, or tell anyone to stop a doctor's medication.
+6. If pregnancy, child <2 months, severe bleeding, breathing difficulty, unconscious, or seizure → REFER URGENTLY.
+7. You are an assistant, not a replacement for a qualified doctor.
+"""
+
+# ── Useful template tweaks (rare cases) ────────────────────────────────────
+# Disable thinking mode (Gemma 4 supports thinking but for short patient
+# answers it just adds latency). Uncomment to enable:
+# TEMPLATE """{{- /* default Gemma 4 template */ -}}"""
+
+# ── License ─────────────────────────────────────────────────────────────────
+LICENSE """SehatSaathi is released under the Apache-2.0 license, in compliance with the Gemma Terms of Use. The fine-tune adapter authored by Ali Ch (https://www.ali-ch.dev) is also Apache-2.0.
+
+THIS MODEL IS NOT A SUBSTITUTE FOR PROFESSIONAL MEDICAL ADVICE, DIAGNOSIS, OR TREATMENT. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. Never disregard professional medical advice or delay in seeking it because of something this model has said. In case of medical emergency, call 1122 (Pakistan Rescue) or your local emergency number immediately.
+"""
