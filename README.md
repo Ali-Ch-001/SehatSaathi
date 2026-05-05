@@ -7,7 +7,7 @@
 
 |                    |                                                                                                                               |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| 🎥 Video           | _attach YouTube link in Kaggle writeup_                                                                                       |
+| 🎥 Video            | [youtu.be/-nGJp-r9FRU](https://youtu.be/-nGJp-r9FRU)                                                                          |
 | 🌐 Live demo       | [huggingface.co/spaces/Ali-001-ch/SehatSaathi-demo](https://huggingface.co/spaces/Ali-001-ch/SehatSaathi-demo)                |
 | 📒 Kaggle notebook | [kaggle.com/code/alich2/sehatsaathi-gemma4-finetune](https://www.kaggle.com/code/alich2/sehatsaathi-gemma4-finetune)          |
 | 🤗 GGUF (Ollama)   | [Ali-001-ch/sehatsaathi-gemma4-e4b-GGUF](https://huggingface.co/Ali-001-ch/sehatsaathi-gemma4-e4b-GGUF) — 8B, Text Generation |

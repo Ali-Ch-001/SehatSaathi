@@ -20,6 +20,7 @@ If you just want to try the model without any setup:
 | [`Ali-001-ch/sehatsaathi-gemma4-e4b`](https://huggingface.co/Ali-001-ch/sehatsaathi-gemma4-e4b) | Image-Text-to-Text (16-bit) | ~16 GB | **Multimodal inference** (vision + text) |
 | [`Ali-001-ch/sehatsaathi-gemma4-e4b-lora`](https://huggingface.co/Ali-001-ch/sehatsaathi-gemma4-e4b-lora) | LoRA adapter | ~250 MB | **Cheap reproducibility** — apply to base Gemma 4 E4B |
 | [Kaggle notebook](https://www.kaggle.com/code/alich2/sehatsaathi-gemma4-finetune) | Jupyter | — | **Reproduce the fine-tune** end-to-end on free 2× T4 |
+| [Demo video](https://youtu.be/-nGJp-r9FRU) | YouTube | — | **3-minute pitch** showing the problem, solution, and offline demo |
 
 ---
 

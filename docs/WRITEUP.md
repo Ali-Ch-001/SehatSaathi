@@ -144,7 +144,7 @@ The Pakistan National Programme for Family Planning and Primary Health Care alre
 
 ## Try it yourself
 
-- 🎥 **Video** — see Media Gallery (3 min, Loom)
+- 🎥 **Video** — [youtu.be/-nGJp-r9FRU](https://youtu.be/-nGJp-r9FRU)
 - 💻 **Code** — [github.com/Ali-Ch-001/SehatSaathi](https://github.com/Ali-Ch-001/SehatSaathi) (Apache-2.0)
 - 🌐 **Live demo** — [huggingface.co/spaces/Ali-001-ch/SehatSaathi-demo](https://huggingface.co/spaces/Ali-001-ch/SehatSaathi-demo)
 - 📒 **Kaggle notebook** — [kaggle.com/code/alich2/sehatsaathi-gemma4-finetune](https://www.kaggle.com/code/alich2/sehatsaathi-gemma4-finetune)

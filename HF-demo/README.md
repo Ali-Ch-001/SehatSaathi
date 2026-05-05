@@ -55,6 +55,7 @@ Submission to **The Gemma 4 Good Hackathon** by [Ali Ch](https://www.ali-ch.dev)
 | Resource | Link |
 |---|---|
 | 💻 Source code | [github.com/Ali-Ch-001/SehatSaathi](https://github.com/Ali-Ch-001/SehatSaathi) |
+| 🎥 Demo video  | [youtu.be/-nGJp-r9FRU](https://youtu.be/-nGJp-r9FRU) |
 | 📒 Kaggle training notebook | [kaggle.com/code/alich2/sehatsaathi-gemma4-finetune](https://www.kaggle.com/code/alich2/sehatsaathi-gemma4-finetune) |
 | 🤗 GGUF (this Space uses) | [`Ali-001-ch/sehatsaathi-gemma4-e4b-GGUF`](https://huggingface.co/Ali-001-ch/sehatsaathi-gemma4-e4b-GGUF) — 8B, Text Generation |
 | 🤗 Merged 16-bit | [`Ali-001-ch/sehatsaathi-gemma4-e4b`](https://huggingface.co/Ali-001-ch/sehatsaathi-gemma4-e4b) — Image-Text-to-Text |
