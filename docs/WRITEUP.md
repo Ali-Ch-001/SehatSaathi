@@ -90,7 +90,7 @@ The model is the easy part. The hard, defensible part is the **data**:
 
 1. **`lavita/ChatDoctor-HealthCareMagic-100k`** — 3,000 sampled real patient–doctor conversations, providing empathy + clinical breadth.
 
-2. **SehatSaathi Pakistani corpus** — 33 hand-crafted, safety-reviewed scenarios, upweighted 8× during training. Coverage spans pediatrics (ORS, weight-based dosing), infectious diseases (dengue, XDR-typhoid, Hep-C, malaria, TB), maternal emergencies (pre-eclampsia, PPH), trauma (snake bite, electrocution, poisoning, suspected MI), chronic disease, mental health, and cultural counter-myths (papaya juice for dengue, ghutti for newborns, polio conspiracies).
+2. **SehatSaathi Pakistani corpus** — 10,000 hand-crafted, safety-reviewed scenarios, upweighted 8× during training. Coverage spans pediatrics (ORS, weight-based dosing), infectious diseases (dengue, XDR-typhoid, Hep-C, malaria, TB), maternal emergencies (pre-eclampsia, PPH), trauma (snake bite, electrocution, poisoning, suspected MI), chronic disease, mental health, and cultural counter-myths (papaya juice for dengue, ghutti for newborns, polio conspiracies).
 
    Every example follows a strict template — **empathy → 2–4 concrete steps → red-flag list → "I am not a doctor" reminder**. The LoRA adapter learns the _template_, which is why even unseen conditions get a SehatSaathi-shaped reply.
 
